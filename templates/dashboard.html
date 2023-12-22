@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Refresh" content="1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard : ASPL</title>
+    <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .card h2 {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 0;
+        }
+
+        .card-red {
+            background-color: #ff5252;
+            color: #fff;
+        }
+
+        .card-blue {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .card-green {
+            background-color: #28a745;
+            color: #fff;
+        }
+        .heading {
+            text-align: center;
+            padding: 80px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .heading{
+    background-image: url('bg.jpg');
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000000;
+}
+.abc {
+    color: #5300fa;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 100px; /* Adjust the width of your logo */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #e74c3c; /* Change the color on hover */
+}
+
+.footer-social {
+    display: flex;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icon img {
+    width: 30px;
+}
+    </style>
+</head>
+<body>
+
+
+
+    <div class="heading">
+        <h1>SMART LIGHTING SYSTEM</h1>
+        <h2 class="abc">Dashboard</h2>
+    </div>
+                <div class="container">
+        <div class="card card-red">
+            <h2>Time </h2>
+            <p>{{ data.h }}:{{ data.m }}:{{ data.s }}</p>
+        </div>
+                    <div class="card card-red">
+            <h2>Is Human Detected...</h2>
+            <p> {{ data.hu }} </p>
+                    </div>
+
+            <div class="card card-red">
+            <h2>Currently Watt consumption</h2>
+            <p>{{ data.watt }}</p>
+        </div>
+
+        <div class="card card-blue">
+            <h2>NO. OF LIGHTS </h2>
+            <p>300</p>
+        </div>
+
+        <div class="card card-green">
+            <h2>NO OF LIGHTS ON</h2>
+            <p>250</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="your-logo.png" alt="Your Logo">
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Your Company. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
